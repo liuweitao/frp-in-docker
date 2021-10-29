@@ -1,5 +1,5 @@
 #!/bin/bash
-version="0.37.1"
+version="0.38.0"
 
 echo "Download ..."
 wget https://github.com/fatedier/frp/releases/download/v${version}/frp_${version}_linux_amd64.tar.gz
