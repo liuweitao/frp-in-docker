@@ -1,4 +1,4 @@
-FROM amd64/alpine
+FROM alpine:latest
 
 ADD ./frp/frps /usr/bin/
 
