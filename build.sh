@@ -12,9 +12,9 @@ echo "Unzip ..."
 tar -xzf frp_${version}_${os}_${cpu}.tar.gz
 mv frp_${version}_${os}_${cpu} frp
 echo "Build Server Image ..."
-docker build -f s.dockerfile -t liuweitao/frp-${cpu}-${os}-${cpu}-server:${version} .
+docker build -f s.dockerfile -t liuweitao/frp-server:${version}-${cpu}-${os} .
 echo "Build Client Image ..."
-docker build -f c.dockerfile -t liuweitao/frp-${cpu}-${os}-${cpu}-client:${version} .
+docker build -f c.dockerfile -t liuweitao/frp-client:${version}-${cpu}-${os} .
 echo "Clear files ..."
 rm -rf frp.tar.gz frp
 echo "Done!!"
