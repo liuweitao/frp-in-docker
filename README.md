@@ -18,7 +18,7 @@ mkdir /etc/frp #将你的frps.ini文件放置到此目录
 docker run --name frps --restart=always -d \
     --network host \
     -v /etc/frp:/etc/frp \
-    liuweitao/frp-server:0.39.0-amd64-linux #这一行是镜像名称:tag，如果你前面有修改，这里要对应上
+    liuweitao/frp-server:0.41.0-amd64-linux #这一行是镜像名称:tag，如果你前面有修改，这里要对应上
 </pre>
 <h6>2、客户端：</h6>
 <pre>
@@ -26,7 +26,7 @@ mkdir /etc/frp #将你的frpc.ini文件放置到此目录
 docker run --name frpc --restart=always -d \
     --network host \
     -v /etc/frp:/etc/frp \
-    liuweitao/frp-client:0.39.0-amd64-linux #这一行是镜像名称:tag，如果你前面有修改，这里要对应上
+    liuweitao/frp-client:0.41.0-amd64-linux #这一行是镜像名称:tag，如果你前面有修改，这里要对应上
 </pre>
 
 <h1>了解FRP</h1>
