@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version="0.39.0"
+version="0.41.0"
 #os:darwin|freebsd|linux|windows
 os="linux"
 #cpu:386|amd64|arm|arm64|mips|mips64|mips64le|misple
